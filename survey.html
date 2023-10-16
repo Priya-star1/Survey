@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <form id="survey-form">
+            <div class="question">
+                <label for="q1">Question 1: What is your favorite programming language?</label>
+                <select id="q1" name="question1">
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="csharp">C#</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q2">Question 2: How often do you code?</label>
+                <p><input type="radio" id="q2a" name="question2" value="daily">
+                <label for="q2a">Daily</label>
+                <input type="radio" id="q2b" name="question2" value="weekly">
+                <label for="q2b">Weekly</label>
+                <input type="radio" id="q2c" name="question2" value="monthly">
+                <label for="q2c">Monthly</label>
+                <input type="radio" id="q2d" name="question2" value="rarely">
+                <label for="q2d">Rarely</label></p>
+            </div>
+            <div class="question">
+                <label for="q3">Question 3: What type of projects do you enjoy coding for?</label>
+                <p><input type="checkbox" id="q3a" name="question3" value="web">
+                <label for="q3a">Web Development</label>
+                <input type="checkbox" id="q3b" name="question3" value="mobile">
+                <label for="q3b">Mobile Apps</label>
+                <input type="checkbox" id="q3c" name="question3" value="desktop">
+                <label for="q3c">Desktop Applications</label></p>
+            </div>
+            <div class="question">
+                <label for="q4">Question 4: Additional Comments</label>
+                <textarea id="q4" name="question4" rows="4"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="survey.js"></script>
+</body>
+</html>
